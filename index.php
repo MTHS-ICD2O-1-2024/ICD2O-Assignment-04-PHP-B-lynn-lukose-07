@@ -1,9 +1,143 @@
 <!DOCTYPE html>
-  <html>
-  <head>
-    <title>Title</title>
-  </head>
-  <body>
-    <?php echo '<p>Hello, World!, in PHP</p>'; ?>
-  </body>
+<!-- ICS2O-Assignment4-HTML-JS -->
+<html lang="en-ca">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Ice Cream Cone Cost, in JS" />
+  <meta name="keywords" content="mths, icd2o" />
+  <meta name="author" content="Lynn Lukose" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link
+    rel="stylesheet"
+    href="https://code.getmdl.io/1.3.0/material.deep_purple-pink.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="./apple-touch-icon.png" />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="./favicon-32x32.png" />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="./favicon-16x16.png" />
+  <link rel="manifest" href="./site.webmanifest" />
+  <title>Lynn's Ice Cream!</title>
+</head>
+
+<body>
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <script src="./js/script.js"></script>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <span class="mdl-layout-title">Lynn's Ice Cream!</span>
+      </div>
+    </header>
+    <main class="mdl-layout__content">
+      <div class="right-image">
+        <img src="./images/ice-cream-truck.jpg" alt="icecream" />
+      </div>
+      <div class="page-content">
+        Select the number of scoops and the flavor you'd like!
+      </div>
+      <br />
+      <form action="answer.php" method="GET">
+        <label
+          class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
+          for="one-scoop">
+          <input
+            type="radio"
+            id="one-scoop"
+            class="mdl-radio__button"
+            name="scoops"
+            value="1" />
+          <span class="mdl-radio__label">One Scoop ($1)</span>
+        </label>
+        <br />
+
+        <label
+          class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
+          for="two-scoops">
+          <input
+            type="radio"
+            id="two-scoops"
+            class="mdl-radio__button"
+            name="scoops"
+            value="1.5" />
+          <span class="mdl-radio__label">Two Scoops ($1.50)</span>
+        </label>
+        <br />
+        <br />
+        <p>Pick what flavour you want!</p>
+
+        <label
+          class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
+          for="vanilla">
+          <input
+            type="radio"
+            id="vanilla"
+            class="mdl-radio__button"
+            name="type"
+            value="vanilla" />
+          <span class="mdl-radio__label">Vanilla ($0)</span>
+        </label>
+        <br />
+
+        <label
+          class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
+          for="chocolate">
+          <input
+            type="radio"
+            id="chocolate"
+            class="mdl-radio__button"
+            name="type"
+            value="chocolate" />
+          <span class="mdl-radio__label">Chocolate ($0.50)</span>
+        </label>
+        <br />
+
+        <label
+          class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
+          for="cookie-cream">
+          <input
+            type="radio"
+            id="cookie-cream"
+            class="mdl-radio__button"
+            name="type"
+            value="cookie-cream" />
+          <span class="mdl-radio__label">Cookies and cream ($1.00)</span>
+        </label>
+        <br />
+
+        <label
+          class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
+          for="choco-dipped-cone">
+          <input
+            type="radio"
+            id="choco-dipped-cone"
+            class="mdl-radio__button"
+            name="type"
+            value="choco-dipped-cone" />
+          <span class="mdl-radio__label">Chocolate dipped cone ($1.50)</span>
+        </label>
+        <br />
+        <!-- Accent-colored raised button with ripple -->
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+          type="check-button">
+          Order!
+        </button>
+      </div>
+    </main>
+  </div>
+</body>
+
 </html>
