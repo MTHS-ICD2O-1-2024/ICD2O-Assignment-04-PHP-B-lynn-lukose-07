@@ -62,7 +62,7 @@
         </label>
         <br />
         <br />
-        <div class="page-content">Type Of Chocolate:</div>
+        <div class="page-content">Pick Which flavor you want!</div>
         <br />
         <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="vanilla">
           <input type="radio" id="vanilla" class="mdl-radio__button" name="flavor" value="vanilla" checked>
