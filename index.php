@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- ICS2O-Assignment4-HTML-JS -->
+<!-- ICS2O-Assignment4-HTML-PHP -->
 <html lang="en-ca">
 
 <head>
@@ -30,7 +30,7 @@
     sizes="16x16"
     href="./favicon-16x16.png" />
   <link rel="manifest" href="./site.webmanifest" />
-  <title>Lynn's Ice Cream!</title>
+  <title>Lynn's Ice Cream!, in PHP</title>
 </head>
 
 <body>
@@ -49,94 +49,46 @@
       <div class="page-content">
         Select the number of scoops and the flavor you'd like!
       </div>
+      <div class="page-content">Select which flavor you'd like!'</div>
       <br />
       <form action="answer.php" method="GET">
-        <label
-          class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
-          for="one-scoop">
-          <input
-            type="radio"
-            id="one-scoop"
-            class="mdl-radio__button"
-            name="scoops"
-            value="1" />
+        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="onescoop">
+          <input type="radio" id="onescoop" class="mdl-radio__button" name="scoops" value="onescoop" checked>
           <span class="mdl-radio__label">One Scoop ($1)</span>
         </label>
-        <br />
-
-        <label
-          class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
-          for="two-scoops">
-          <input
-            type="radio"
-            id="two-scoops"
-            class="mdl-radio__button"
-            name="scoops"
-            value="1.5" />
+        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="twoscoops">
+          <input type="radio" id="twoscoops" class="mdl-radio__button" name="scoops" value="twoscoops">
           <span class="mdl-radio__label">Two Scoops ($1.50)</span>
         </label>
         <br />
         <br />
-        <p>Pick what flavour you want!</p>
-
-        <label
-          class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
-          for="vanilla">
-          <input
-            type="radio"
-            id="vanilla"
-            class="mdl-radio__button"
-            name="type"
-            value="vanilla" />
-          <span class="mdl-radio__label">Vanilla ($0)</span>
-        </label>
+        <div class="page-content">Type Of Chocolate:</div>
         <br />
-
-        <label
-          class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
-          for="chocolate">
-          <input
-            type="radio"
-            id="chocolate"
-            class="mdl-radio__button"
-            name="type"
-            value="chocolate" />
+        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="vanilla">
+          <input type="radio" id="vanilla" class="mdl-radio__button" name="flavor" value="vanilla" checked>
+          <span class="mdl-radio__label">Vanilla</span>
+        </label>
+        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="choco">
+          <input type="radio" id="choco" class="mdl-radio__button" name="flavor" value="choco">
           <span class="mdl-radio__label">Chocolate ($0.50)</span>
         </label>
-        <br />
-
-        <label
-          class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
-          for="cookie-cream">
-          <input
-            type="radio"
-            id="cookie-cream"
-            class="mdl-radio__button"
-            name="type"
-            value="cookie-cream" />
-          <span class="mdl-radio__label">Cookies and cream ($1.00)</span>
+        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="cookie">
+          <input type="radio" id="cookie" class="mdl-radio__button" name="flavor" value="cookie">
+          <span class="mdl-radio__label">Cookies and Cream ($1.00)</span>
         </label>
-        <br />
-
-        <label
-          class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
-          for="choco-dipped-cone">
-          <input
-            type="radio"
-            id="choco-dipped-cone"
-            class="mdl-radio__button"
-            name="type"
-            value="choco-dipped-cone" />
+        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="dipped">
+          <input type="radio" id="dipped" class="mdl-radio__button" name="flavor" value="dipped">
           <span class="mdl-radio__label">Chocolate dipped cone ($1.50)</span>
         </label>
+        <br />
         <br />
         <!-- Accent-colored raised button with ripple -->
         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
           type="check-button">
           Order!
         </button>
-      </div>
-    </main>
+  </div>
+  </main>
   </div>
 </body>
 
