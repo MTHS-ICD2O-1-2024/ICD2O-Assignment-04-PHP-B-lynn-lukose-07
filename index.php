@@ -83,11 +83,12 @@
         <br />
         <br />
         <!-- Accent-colored raised button with ripple -->
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
           type="check-button">
           Order!
-        </button>
-      </div>
+          </button>
+        </div>
+      </form>
     </main>
   </div>
 </body>
