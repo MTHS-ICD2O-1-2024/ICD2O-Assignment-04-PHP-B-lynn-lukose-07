@@ -87,8 +87,8 @@
           type="check-button">
           Order!
         </button>
-  </div>
-  </main>
+      </div>
+    </main>
   </div>
 </body>
 
