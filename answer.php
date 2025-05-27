@@ -93,8 +93,8 @@
       echo "Tax: $" . number_format($amountTaxed, 2) . "<br>";
       echo "Total: $" . number_format($totalCost, 2) . "<br>";
       ?>
+    </main>
   </div>
-  </main>
 </body>
 
 </html>
